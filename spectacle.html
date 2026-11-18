@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <fieldset>
+        <h1>Ajout dun spectacle</h1>
+    <form action="ajout.php"  method="post" onsubmit="return verif1()">
+    <fieldset><legend>Information sur le spectacle</legend>
+    <table>
+        <tr>
+            <td>Piece :</td>
+            <td>Salle : </td>
+            <td>Date du spectacle : </td>
+        </tr>
+        <tr>
+            <td>
+            <select name="piece" id="piece">
+                <option value="0">Choisir une piece</option>
+                <option value="1">le tresor</option>
+                <option value="2">le peché du succes</option>
+                <option value="3">le gardien</option>
+                <option value="4">les soldats de la lune</option>
+                <option value="5">l'eternel retour</option>
+            </select>
+            </td>
+            <td><select name="salle" id="salle">
+                <option value="0">Choisir une salle</option>
+                <option value="TM">Theatre Municipal</option>
+                <option value="QA">Quatrieme Art</option>
+                <option value="EN">L'Etoile du Nord</option>
+                <option value="EA">Espace Artisto</option>
+
+            </select></td>
+            <td><input type="date" id="d" name="d"></td>
+        </tr>
+        <tr>
+            <td><span></span></td>
+            <td><span></span></td>
+            <td><input type="submit" name="" id="" class="btn"><input type="reset" class="btn"></td>
+        </tr>
+    </table>
+    </fieldset>
+    </form>
+    </fieldset>
+    <script src="controle.js"></script>
+  
+        
+        </tr>
+    </table>
+</body>
+
+</html>

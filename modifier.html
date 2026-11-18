@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Modification dun spectacle</h1>
+
+    <form action="modifier.php" method="post" onsubmit="return verif2()">
+        <fieldset>
+            <legend>Information sur le spectacle a modifier</legend>
+            <table><tr>
+                <td><label for="">ID du spectacle</label></td>
+            </tr>
+            <tr>
+                <td><input type="text" id="spectacle" name="spectacle"></td>
+            </tr>
+            <tr>
+                <td><label for="">Nouvelle date du spectacle</label></td>
+            </tr>
+            <tr>
+                <td><input type="date" id="date" name="date"></td>
+            </tr>
+            <tr>
+                <td><label for="">Nouvelle salle du spectacle</label></td>
+            </tr>
+            <tr>
+                <td><select name="salle" id="salle">
+                    <option value="0">choisir une nouvelle salle</option>
+                    <option value="EA">Espace Artisto</option>
+                    <option value="EN">L'Etoile du Nord</option>
+                    <option value="QA">Quatrieme Art</option>
+                    <option value="TM">Theatre Municipal</option>
+                    
+                </select></td>
+            </tr>
+            <tr>
+                <td><input type="submit" value="modifier" class="btn"><input type="reset" value="annuler" class="btn"></td>
+            </tr>
+    </table>
+        </fieldset>
+    </form>
+    <script src="controle.js"></script>
+</body>
+</html>
